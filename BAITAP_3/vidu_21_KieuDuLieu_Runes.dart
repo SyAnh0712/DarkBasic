@@ -35,6 +35,7 @@ void main() {
   print(runes1.last); //diem ma cuoi cung
 
   //duyet qua tung diem ma
+  runes1 = 'xin chao, toi rat ♥ ban!'.runes;
   runes1.forEach((int rune) {
     print("unicode: $rune, ky tu: ${String.fromCharCode(rune)}");
   });
@@ -42,4 +43,9 @@ void main() {
   //kiem tra
   print(runes1.isEmpty);
   print(runes1.isNotEmpty);
+
+  //xu ly emoji trong ung dung chat
+  // hien thi ky tu dac biet (copyright, trademark)
+  // tao cac bieu tuong danh gia (sao, tim)
+  //xu ly van ban da ngon ngu co ky tu dac biet
 }
