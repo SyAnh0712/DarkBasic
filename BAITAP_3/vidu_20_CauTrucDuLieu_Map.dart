@@ -90,11 +90,18 @@ void main() {
 
   //them san pham vao gio hang
   void addToCart(String productId) {
-    cart.update(productId, (quantity) => quantity + 1, ifAbsent: () => 1);
+    cart.update(
+      productId,
+      (quantity) => quantity + 1,
+      ifAbsent:
+          () =>
+              1, //ifAbsent tuong tu nhu else, putIfAbsent tuong tu nhu if-else
+    ); //cap nhat hoac tao moi neu cua ton tai
   }
 
   //cap nhat so luong
   void updateQuantity(String productId, int quantity) {
+    //kiem tra key co ton tai khong
     if (cart.containsKey(productId)) {
       cart[productId] = quantity;
     }
@@ -132,10 +139,10 @@ void main() {
   }
 
   void clearError(String field) {
-    formErrors.remove(field);
+    formErrors.remove(field); // xoa theo key
   }
 
   bool hasErrors() {
-    return formErrors.isNotEmpty;
+    return formErrors.isNotEmpty; // kiem tra map co du lieu khong
   }
 }
