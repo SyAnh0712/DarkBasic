@@ -1,8 +1,11 @@
+import 'dart:io';
+
 void daoNuocChuoi(String str) {
   String reversedStr = str.split('').reversed.join('');
   print(reversedStr);
 }
 
 void main() {
-  daoNuocChuoi("Hello, World!");
+  String input = stdin.readLineSync()!;
+  daoNuocChuoi(input);
 }

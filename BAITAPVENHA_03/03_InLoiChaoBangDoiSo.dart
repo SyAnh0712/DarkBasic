@@ -1,8 +1,10 @@
+import 'dart:io';
+
 void greet(String name) {
   print("Hello $name, welcome to the team!");
 }
 
 void main() {
-  greet("Alice");
-  greet("Bob");
+  String name = stdin.readLineSync()!;
+  greet(name);
 }

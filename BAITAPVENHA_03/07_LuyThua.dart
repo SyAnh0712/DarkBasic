@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void luyThua(int n, int m) {
   int result = 1;
   for (int i = 0; i < m; i++) {
@@ -7,6 +9,7 @@ void luyThua(int n, int m) {
 }
 
 void main() {
-  luyThua(2, 3);
-  luyThua(5, 3);
+  int n = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
+  int m = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
+  luyThua(n, m);
 }

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void soChan(int a, int b) {
   List<int> soChanList = [];
   for (int i = a; i <= b; i++) {
@@ -9,5 +11,7 @@ void soChan(int a, int b) {
 }
 
 void main() {
-  soChan(1, 9);
+  int a = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
+  int b = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
+  soChan(a, b);
 }
