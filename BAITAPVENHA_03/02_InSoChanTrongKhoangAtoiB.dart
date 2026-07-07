@@ -11,7 +11,7 @@ void soChan(int a, int b) {
 }
 
 void main() {
-  int a = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
-  int b = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
+  int a = int.parse(stdin.readLineSync()!);
+  int b = int.parse(stdin.readLineSync()!);
   soChan(a, b);
 }

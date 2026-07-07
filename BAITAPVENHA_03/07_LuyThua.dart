@@ -1,15 +1,19 @@
 import 'dart:io';
+import 'dart:math';
 
-void luyThua(int n, int m) {
+int luyThua(int n, int m) {
   int result = 1;
   for (int i = 0; i < m; i++) {
     result *= n;
   }
-  print("$n raised to the power of $m is: $result");
+  return result;
 }
 
+int power(int n, int m) => pow(n, m).toInt();
+
 void main() {
-  int n = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
-  int m = stdin.readLineSync() != null ? int.parse(stdin.readLineSync()!) : 0;
-  luyThua(n, m);
+  int n = int.parse(stdin.readLineSync()!);
+  int m = int.parse(stdin.readLineSync()!);
+  print("Luy thua cua $n mu $m la: ${luyThua(n, m)}");
+  print("Luy thua cua $n mu $m la: ${power(n, m)}");
 }
