@@ -43,6 +43,7 @@ void main() {
   print(set1.length); //Output: 3, dem so phan tu
   print(set1.isEmpty); //Output: false, kiem tra rong
   print(set1.isNotEmpty); //Output: true, kiem tra khong rong
+  print(set1.elementAt(1)); //Output: E, lay phan tu tai vi tri 1
 
   //cac phep toam tap hop
   var set5 = {1, 2, 3};
