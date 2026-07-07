@@ -4,8 +4,8 @@ int mul(int n1, int n2) => n1 * n2;
 double div(int n1, int n2) => n1 / n2;
 
 void main() {
-  int num1 = 100;
-  int num2 = 30;
+  int num1 = 1;
+  int num2 = 2;
 
   print("the sum is: ${add(num1, num2)}");
   print("the diff is: ${sub(num1, num2)}");
