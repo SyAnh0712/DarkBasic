@@ -3,7 +3,10 @@ import 'dart:io';
 void main() {
   File file = File('d:\\DarkBasic\\BAITAPFLUTTER\\text.txt');
 
-  String contents = file.readAsStringSync().substring(0, 10);
+  String contents = file.readAsStringSync();
+
+  file.writeAsStringSync("Wellcome to text.txt file!");
+  print("File created successfully.");
 
   print("File content: $contents");
   print("File path: ${file.path}");

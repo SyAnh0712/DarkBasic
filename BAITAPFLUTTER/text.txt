@@ -1,2 +1,1 @@
-Wellcome to text.txt file
-This is a text file
+Wellcome to text.txt file!
