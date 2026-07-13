@@ -1,1 +1,2 @@
 Wellcome to text.txt file!
+This is a new line added to the file.
