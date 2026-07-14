@@ -6,9 +6,10 @@ class Point {
 
 void main() {
   const point1 = Point(1, 2);
-  print("Point 1: (${point1.x}, ${point1.y})");
+  print("Point 1: (${point1.hashCode})");
+
   const point2 = Point(1, 2);
-  print("Point 2: (${point2.x}, ${point2.y})");
+  print("Point 2: (${point2.hashCode})");
 
   print(point1 == point2);
 }
