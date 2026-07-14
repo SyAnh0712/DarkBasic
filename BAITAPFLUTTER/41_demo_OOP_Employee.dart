@@ -18,3 +18,11 @@ class Employee {
     this._name = name;
   }
 }
+
+void main() {
+  Employee emp = Employee();
+  emp.setId(1);
+  emp.setName("Nguyen Van A");
+  print("Employee ID: ${emp.getId()}");
+  print("Employee Name: ${emp.getName()}");
+}
